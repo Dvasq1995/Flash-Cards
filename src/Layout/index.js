@@ -11,8 +11,6 @@ import Study from './Study';
 import EditDeck from './EditDeck';
 
 import CardTemplate from './CardTemplate';
-import EditCard from './EditCard';
-import AddCard from './AddCard';
 
 function Layout() {
   const url = '/decks/';
