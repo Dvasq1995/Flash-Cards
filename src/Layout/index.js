@@ -10,9 +10,9 @@ import Deck from './Deck';
 import Study from './Study';
 import EditDeck from './EditDeck';
 
+import CardTemplate from './CardTemplate';
 import EditCard from './EditCard';
 import AddCard from './AddCard';
-
 
 function Layout() {
   const url = '/decks/';
@@ -43,10 +43,10 @@ function Layout() {
             <Deck updateDecks={updateDecks} />
           </Route>
           <Route path={`${url}:deckId/cards/:cardId/edit`}>
-            <EditCard />
+            <CardTemplate setting="edit" />
           </Route>
           <Route path={`${url}:deckId/cards/new`}>
-            <AddCard />
+            <CardTemplate setting='add' />
           </Route>
           <Route>
             <NotFound />
